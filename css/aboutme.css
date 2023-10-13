@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Inter", "Inter Placeholder", sans-serif ;
+    margin: 30px;
+    line-height: 1.6;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    border: 2px solid rgb(254, 76, 201);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+
+}
+nav a{
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(254, 76, 201);
+
+}
+.active{
+    text-decoration: underline;
+    color: rgb(254, 76, 201);
+}
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+.Center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    display: inline;
+    padding: 50px;
+}
+footer {
+    background-color:rgb(254, 76, 201);
+    padding: 50px;
+    text-align: right;
+}
