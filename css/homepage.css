@@ -8,9 +8,12 @@ body {
 h1 {
     text-align: center;
 }
+h2 {
+    text-decoration: underline;
+}
 nav {
     border: 2px solid rgb(254, 76, 201);
-    width: 100%;
+    width: 95%;
     text-align: center;
     padding: 20px;
     display: inline-block;
@@ -51,6 +54,18 @@ ul {
 li {
     display: inline;
     padding: 50px;
+}
+.Personal img {
+    width: 200px;
+    height: 200px;
+}
+.Personal img:hover {
+    border: rgb(255, 148, 223)  solid 5px;
+}
+.Personal h3:hover {
+    color: rgb(255, 148, 223) ;
+    text-decoration: underline;
+    
 }
 .CLAWS img {
     width: 200px;
