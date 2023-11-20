@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/reset.css"></link> -->
-<link rel="stylesheet" href="css/homepage.css">    </link>
+    <link rel="stylesheet" href="css/homepage.css">    </link>
     <title>Vaiva Raisys</title>
 </head>
 <nav>
-    <ul>  
-    <li><a href="homepage.html" class="active"> Work </a>    </li>
-    <li>  <a href="https://drive.google.com/file/d/1xpgsk8A70M6Q6oGV5gYQDZbm7nQXk_BO/view?usp=sharing">Resume</a>   </li>
-    <li>  <a href="aboutme.html">About</a>   </li>
-    </ul>
-    </nav>
+  <div class="sidebar">
+      <ul>
+      <li><a href="homepage.html" class="active"> Work </a>    </li>
+      <li>  <a href="https://drive.google.com/file/d/1xpgsk8A70M6Q6oGV5gYQDZbm7nQXk_BO/view?usp=sharing">Resume</a>   </li>
+      <li>  <a href="aboutme.html">About</a>   </li>
+      </ul>
+  </div>
+
+  </nav>
 
     <button type="button" onclick="topFunction()" id="topButton" title="Go to top">Back to Top</button>
 
@@ -22,47 +25,128 @@
 <main class="main">
     <body>
         <h1>Vaiva Raisys</h1>
+
+        <!-- <div class="chunk Center" >
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/homepage.jpg" alt="Yelp Logo" style="width:400px;height:500px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Vaiva Raisys </h1>
+                  <p> I am a Information Science student at the University of Michigan with a specialization in User Experience Design and Quantitative Methods. I focus on developing digital experiences that seamlessly combine aesthetics and functionality, with a strong emphasis on accessibility. My journey has been defined by a commitment to user-centered design principles, web development and design, research and a desire to bridge the gap between creativity and practicality while ensuring inclusivity in technology. </p>
+                </div>
+              </div>
+            </div> -->
+
+
 <img src="images/homepage.jpg" alt="Vaiva in a pink dress sitting in a car" class="Center"> </img>
-    <p>
+    <p class="intro">
         My name is Vaiva Raisys and I am a Sophomore Undergraduate Student at the University of Michigan studying User Experience Design in the School of Information. I am deeply passionate about web design/development with a focus in accessability and usablity.
     </p>
     
     <h2>Recent Projects:</h2>
-    <div class="Personal">
-        <a
-         href="https://www.figma.com/proto/VVLOGqvmLWG8K0xEwu7hxe/AstroQuest?type=design&node-id=1-5&t=ERiXLirObxlG7nCn-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A5&mode=design">
-        <img src="images/spaceTourism.png" width = 200px alt="Iphone mini">   </img> 
-         </a>
-   
-       <a href="https://www.figma.com/proto/VVLOGqvmLWG8K0xEwu7hxe/AstroQuest?type=design&node-id=1-5&t=ERiXLirObxlG7nCn-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A5&mode=design"> <h3>Space Tourism Personal Project</h3> </a>
-       </div>
-    
-    <div class="CLAWS">
-    <a href="https://claws.engin.umich.edu/"><img src="images/claws.jpg" alt="CLAWS Logo">  </img></a>
+    <div class="chunk">
+      <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/yelp.png" alt="Yelp Logo" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Yelp Social Media Research & Analysis Paper</h1>
+              <p> I did a deep dive into the design and structure of social media to anaylze the customer experience using it. I specifically researched the accessability and UX design principals and how they compare to typical standards. </p>
+            </div>
+          </div>
+        </div>
+      <a class="yelp" href="https://www.yelp.com/user_details?userid=0ESWog4nsAtyuGYX8-VTCg"> 
+      <h3> Yelp Research Paper  <h3>
 
-        <a href="https://github.com/CLAWS-UMICH">
-            <h3> Collaborative Lab for Advancing Work in Space</h3>
-        </a>
+
+    <div class="chunk">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/spaceTourism.png" alt="Iphone mini" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Space Tourism Prototype</h1>
+                <p>Made in Michigan Open UX Design Jam</p>
+              </div>
+            </div>
+          </div>
+           <a class="Personal" href="https://www.figma.com/proto/VVLOGqvmLWG8K0xEwu7hxe/AstroQuest?type=design&node-id=1-5&t=ERiXLirObxlG7nCn-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A5&mode=design"> <h3>Space Tourism Personal Project</h3> </a>
+           </div>
+    </div>
+    
+
+
+
+    <div class="chunk">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/claws.jpg" alt="CLAWS Logo" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Collarborative Lab for Advancing Work in Space</h1>
+                <p>Interdisciplinary project that creates Augmented Reality technology for NASA astronauts in the S.U.I.T.S challenge. </p>
+              </div>
+            </div>
+          </div>
+            <a class="CLAWS" href="https://github.com/CLAWS-UMICH">
+                <h3> Collaborative Lab for Advancing Work in Space</h3>
+            </a>
+        </div>
     </div>
 
-    <div class="web">
 
-        <a href="https://drive.google.com/file/d/1-JH5ePfuI6ayj3FnGEcL4aTNrWmkWCbN/view?usp=sharing">
-           <img src="images/webproject.jpeg" width="200px" alt="University of Michigan Logo">  </img></a>
-   
-       <a href="https://drive.google.com/file/d/1-JH5ePfuI6ayj3FnGEcL4aTNrWmkWCbN/view?usp=sharing"> <h3>Accessability Audit Project</h3> </a>
+
+    <div class="chunk">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/webproject.jpeg" alt="University of Michigan Logo" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Accessability Audit Project</h1>
+            <p>I evaluated a Ann Arbor business on their website based on how accessible it was. I was selected to present this presention in front of the entire lecture of my class. </p>
+          </div>
+        </div>
+      </div>
+       <a class="web" href="https://drive.google.com/file/d/1-JH5ePfuI6ayj3FnGEcL4aTNrWmkWCbN/view?usp=sharing"> <h3>Accessability Audit Project</h3> </a>
        </div>
     
-    <div class="openUX">
-        <a href="https://www.moux.club/"><img src="images/openux.jpg" alt="Michigan Open UX Logo"> 
+
+
+    <div class="chunk">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="images/openux.jpg" alt="Michigan Open UX Logo" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1>Michigan Open User Experience</h1>
+                <p>A fellowship program that focuses on UX design principals with an implementation of these designs in jams and personal projects.</p>
+              </div>
+            </div>
+          </div>
+        <a class="openUX" href="https://www.moux.club/"> 
         <h3> Michigan Open UX  <h3>
     </a>
     </div>
+
+  </a>
+  </div>
+
+
 </main>
 <script src="js/functions.js"></script>
 
-<footer> Coded by Vaiva Raisys 
-<a href="https://linkedin.com/in/vaivaraisys"> Linkedin Profile </a>
+<footer>
+   <p>
+  Coded by Vaiva Raisys <br>
+  <a href="https://linkedin.com/in/vaivaraisys"> Linkedin Profile </a>
+  </p>
 </footer>
 </body>
 </html>

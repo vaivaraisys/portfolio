@@ -11,7 +11,9 @@ h1 {
 h2 {
     text-decoration: underline;
 }
+
 nav {
+    display: flex;
     border: 2px solid rgb(254, 76, 201);
     width: 95%;
     text-align: center;
@@ -47,6 +49,11 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+.intro {
+    font-size: 150%;
+    display: block;
+    margin: auto;
+}
 ul {
     list-style-type: none;
 }
@@ -55,6 +62,12 @@ li {
     display: inline;
     padding: 50px;
 }
+
+.yelp:hover {
+    color: rgb(255, 148, 223) ;
+    text-decoration: underline;   
+}
+
 .Personal img {
     width: 200px;
     height: 200px;
@@ -64,9 +77,9 @@ li {
 }
 .Personal h3:hover {
     color: rgb(255, 148, 223) ;
-    text-decoration: underline;
-    
+    text-decoration: underline; 
 }
+
 .CLAWS img {
     width: 200px;
     height: 200px;
@@ -76,8 +89,7 @@ li {
 }
 .CLAWS h3:hover {
     color: rgb(255, 148, 223) ;
-    text-decoration: underline;
-    
+    text-decoration: underline;   
 }
 
 .openUX img {
@@ -106,6 +118,7 @@ li {
    
 }
 
+
 div {
    font-size: 15px; 
 }
@@ -123,12 +136,19 @@ footer {
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: rgb(254, 76, 201); 
-    color: white; 
+    background-color: rgb(254, 76, 201);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;; 
+    color: black; 
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px; 
     font-size: 18px; 
+  }
+
+  #topButton:hover {
+    background-color: rgb(253, 190, 234);
   }
 
   /*welcome page pop up */ 
@@ -165,4 +185,52 @@ footer {
   
   .close-button:hover {
     color: #d7d3d3;
+  }
+
+
+  /* flip card css */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+ 
+  .flip-card-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    overflow: scroll;
   }
