@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"></link> -->
+    <link rel="stylesheet" href="css/reset.css"></link>
     <link rel="stylesheet" href="css/aboutme.css">    </link>
+    <script src="https://kit.fontawesome.com/e32642b046.js" crossorigin="anonymous"></script>
     <title>About Me!</title>
 </head>
 
@@ -21,16 +22,43 @@
 <h1>  Vaiva Raisys  </h1>
 <img src="images/aboutme.jpg" alt="Girl walking in garden barefoot" class="Center"></img>
 
-<p> 
+<p class="intro"> 
     I am an Undergraduate Student at the University of Michigan studying User Experience Design with a minor in Quantitative Methods in Social Science. My main areas of focus involve creating digital experiences that harmoniously blend aesthetics and functionality, with a particular emphasis on ensuring accessibility. Throughout my academic journey, I have remained dedicated to the principles of user-centered design, honed my skills in web development and design, and aspired to bridge the divide between creativity and practicality, all while prioritizing inclusivity in technology.
 </p>
 
 <h2>What I'm Up to Right Now</h2>
-<p>
+<p class="intro">
 I am currently learning web design skills through my SI 339 class and information heuristics in my SI 110 class. Outside of academics, I am apart of the Collaborative Lab for Advancing Work in Space, which we are currently working to create an Augmented Reality Interface to compete in the NASA SUITS challenge, in Houston in May, which advances technology for astronauts. My role on this team is a web designer and developer. My team and I work to build the Mission Control Center dashboard by leveraging the HoloLens' dynamic AR capabilities. The MCC interface will establish a seamless web connection between astronauts and mission control, facilitating real-time communication, data sharing, and task coordination. Outside of CLAWS, I also work on the Michigan Open UX Fellowship Program to develop more UX principals to better build my platforms and products.
 </p>
-    </body>
-<footer> <p>Coded by Vaiva Raisys <br> <a href="https://linkedin.com/in/vaivaraisys"> Linkedin Profile </a></p>
+    </body> <br> <br> <br>
+
+    <div class="container">
+        <h4> Contact Me! </h4>
+         <form action="js/action_page.php">
+           <label for="fname">First Name</label>
+           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+       
+           <label for="lname">Last Name</label>
+           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+       
+           <label for="country">Country</label>
+           <select id="country" name="country">
+             <option value="australia">Australia</option>
+             <option value="canada">Canada</option>
+             <option value="usa">USA</option>
+           </select>
+       
+           <label for="subject">Subject</label>
+           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+       
+           <input type="submit" value="Submit">
+         </form>
+       </div> 
+
+<footer> <p> Coded by Vaiva Raisys </p> <br>
+    <a href="https://linkedin.com/in/vaivaraisys" class="footer-icon">
+      <i class="fa-brands fa-linkedin-in"></i>
+  </a>
 </footer>
 <script src="js/functions.js"></script>
 </main>

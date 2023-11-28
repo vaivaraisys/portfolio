@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"></link> -->
+    <link rel="stylesheet" href="css/reset.css"></link>
     <link rel="stylesheet" href="css/homepage.css">    </link>
+    <script src="https://kit.fontawesome.com/e32642b046.js" crossorigin="anonymous"></script>
     <title>Vaiva Raisys</title>
 </head>
 <nav>
@@ -25,6 +26,13 @@
 <main class="main">
     <body>
         <h1>Vaiva Raisys</h1>
+        <div id="welcome-modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button" id="close-welcome">&times;</span>
+            <h2>Welcome to My Personal Portfolio</h2>
+            <p> Contact me at the bottom if you have any questions!</p>
+          </div>
+       </div>
 
         <!-- <div class="chunk Center" >
           <div class="flip-card">
@@ -40,10 +48,10 @@
             </div> -->
 
 
-<img src="images/homepage.jpg" alt="Vaiva in a pink dress sitting in a car" class="Center"> </img>
+<img src="images/homepage.jpg" alt="Vaiva in a pink dress sitting in a car" class="Center"> </img> <br> <br>
     <p class="intro">
         My name is Vaiva Raisys and I am a Sophomore Undergraduate Student at the University of Michigan studying User Experience Design in the School of Information. I am deeply passionate about web design/development with a focus in accessability and usablity.
-    </p>
+    </p> <br><br>
     
     <h2>Recent Projects:</h2>
     <div class="chunk">
@@ -54,12 +62,12 @@
             </div>
             <div class="flip-card-back">
               <h1>Yelp Social Media Research & Analysis Paper</h1>
-              <p> I did a deep dive into the design and structure of social media to anaylze the customer experience using it. I specifically researched the accessability and UX design principals and how they compare to typical standards. </p>
+              <p> I did a deep dive into the design and structure of social media to anaylze the customer experience using it. I specifically researched the accessability and UX design principals and how they compare to typical standards. </p> 
             </div>
           </div>
         </div>
       <a class="yelp" href="https://www.yelp.com/user_details?userid=0ESWog4nsAtyuGYX8-VTCg"> 
-      <h3> Yelp Research Paper  <h3>
+      <h3> Yelp Research Paper  <h3> <br>
 
 
     <div class="chunk">
@@ -70,13 +78,13 @@
               </div>
               <div class="flip-card-back">
                 <h1>Space Tourism Prototype</h1>
-                <p>Made in Michigan Open UX Design Jam</p>
+                <p>Made in Michigan Open UX Design Jam where you had 90 minutes to create a prototype for a Space Tourism app or website. </p>
               </div>
             </div>
           </div>
            <a class="Personal" href="https://www.figma.com/proto/VVLOGqvmLWG8K0xEwu7hxe/AstroQuest?type=design&node-id=1-5&t=ERiXLirObxlG7nCn-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A5&mode=design"> <h3>Space Tourism Personal Project</h3> </a>
            </div>
-    </div>
+    </div> <br>
     
 
 
@@ -97,7 +105,7 @@
                 <h3> Collaborative Lab for Advancing Work in Space</h3>
             </a>
         </div>
-    </div>
+    </div> <br>
 
 
 
@@ -114,7 +122,7 @@
         </div>
       </div>
        <a class="web" href="https://drive.google.com/file/d/1-JH5ePfuI6ayj3FnGEcL4aTNrWmkWCbN/view?usp=sharing"> <h3>Accessability Audit Project</h3> </a>
-       </div>
+       </div> <br>
     
 
 
@@ -136,17 +144,51 @@
     </div>
 
   </a>
-  </div>
+  </div> <br>
 
+
+<div class="container">
+<form onsubmit="sendEmail(); reset(); return false">
+<h3> GET IN TOUCH! </h3>
+<input type="text" id="name" placeholder="Name" required></input>
+
+<input type="email" id="email" placeholder=" Email " required></input>
+
+<input type="text" id="phone" placeholder="Phone Number" required></input>
+
+<textarea id="message" rows="4" placeholder="Message goes here..."></textarea>
+
+<button type="submit"> Send</button>
+</form>
+
+</div>
 
 </main>
 <script src="js/functions.js"></script>
+<br><br><br>
+
 
 <footer>
-   <p>
-  Coded by Vaiva Raisys <br>
-  <a href="https://linkedin.com/in/vaivaraisys"> Linkedin Profile </a>
-  </p>
+<p> Coded by Vaiva Raisys </p> <br>
+  <a href="https://linkedin.com/in/vaivaraisys" class="footer-icon">
+    <i class="fa-brands fa-linkedin-in"></i>
+</a>
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail() {
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "vaivaraisys@gmail.com",
+      Password : "password",
+      To : 'vaivaraisys@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Contact Form Inquiry from Portfolio",
+      Body : "Name" + document.getElementById("name").value + "<br> Email:" + document.getElementById("email").value + "<br> Phone: " + document.getElementById("phone").value + "<br> Message" + document.getElementById("message").value
+  }).then(
+    message => alert("Message Sent!")
+  );
+    }
+</script>
 </body>
 </html>
