@@ -9,6 +9,7 @@
     <title>About Me!</title>
 </head>
 
+
 <nav>
     <ul>  
     <li><a href="homepage.html" > Work </a>    </li>
@@ -16,15 +17,20 @@
     <li>  <a href="aboutme.html" class="active">About</a>   </li>
     </ul>
     </nav>
+
+    <!-- <div id="progress-container">
+      <div id="progress-bar"></div> -->
     <button type="button" onclick="topFunction()" id="topButton" title="Go to top">Back to Top</button>
+
+
 <main>
-    <body>
-<h1>  Vaiva Raisys  </h1>
-<img src="images/aboutme.jpg" alt="Girl walking in garden barefoot" class="Center"></img>
+    <body> <br> 
+<h1>  Vaiva Raisys  </h1> <br>
+<img src="images/aboutme.jpg" alt="Girl walking in garden barefoot" class="Center"></img>  <br> <br> 
 
 <p class="intro"> 
     I am an Undergraduate Student at the University of Michigan studying User Experience Design with a minor in Quantitative Methods in Social Science. My main areas of focus involve creating digital experiences that harmoniously blend aesthetics and functionality, with a particular emphasis on ensuring accessibility. Throughout my academic journey, I have remained dedicated to the principles of user-centered design, honed my skills in web development and design, and aspired to bridge the divide between creativity and practicality, all while prioritizing inclusivity in technology.
-</p>
+</p> <br> <br>
 
 <h2>What I'm Up to Right Now</h2>
 <p class="intro">
@@ -32,34 +38,33 @@ I am currently learning web design skills through my SI 339 class and informatio
 </p>
     </body> <br> <br> <br>
 
-    <div class="container">
-        <h4> Contact Me! </h4>
-         <form action="js/action_page.php">
-           <label for="fname">First Name</label>
-           <input type="text" id="fname" name="firstname" placeholder="Your name..">
-       
-           <label for="lname">Last Name</label>
-           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-       
-           <label for="country">Country</label>
-           <select id="country" name="country">
-             <option value="australia">Australia</option>
-             <option value="canada">Canada</option>
-             <option value="usa">USA</option>
-           </select>
-       
-           <label for="subject">Subject</label>
-           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-       
-           <input type="submit" value="Submit">
-         </form>
-       </div> 
+  
 
-<footer> <p> Coded by Vaiva Raisys </p> <br>
+<footer> 
+  <p> Coded by Vaiva Raisys </p> <br>
     <a href="https://linkedin.com/in/vaivaraisys" class="footer-icon">
       <i class="fa-brands fa-linkedin-in"></i>
   </a>
 </footer>
 <script src="js/functions.js"></script>
+<script src="js/progressBar.js"></script>
+<script src="js/imgEffect.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail() {
+      Email.send({
+      Host : "smtp.gmail.com",
+      Username : "vaivaraisys@gmail.com",
+      Password : "password",
+      To : 'vaivaraisys@gmail.com',
+      From : document.getElementById("email").value,
+      Subject : "New Contact Form Inquiry from Portfolio",
+      Body : "Name" + document.getElementById("name").value + "<br> Email:" + document.getElementById("email").value + "<br> Phone: " + document.getElementById("phone").value + "<br> Message" + document.getElementById("message").value
+  }).then(
+    message => alert("Message Sent!")
+  );
+    }
+</script>
+
 </main>
 </html>

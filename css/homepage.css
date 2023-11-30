@@ -1,11 +1,25 @@
 body {
     background-color: black;
+    /* background-image: linear-gradient(black, rgb(255, 255, 255)); */
     color: white;
     font-family: "Inter", "Inter Placeholder", sans-serif ;
     margin: 30px;
     line-height: 1.6;
     /* padding: 50px; */
 }
+.skip {
+  position: absolute;
+  top: -100px; 
+  background-color: #000;
+  color: #fff;
+  padding: 2% ;
+  text-decoration: underline;
+}
+
+.skip:focus {
+   top: 0; 
+   padding: 10px;
+  }
 h1 {
     text-align: center;
     font-size: 40px;
@@ -320,6 +334,33 @@ footer {
     align-items: center;
     justify-content: center;
   }
+/* progress bar */
+#progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  z-index: 1000;
+  display: none;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: rgb(254, 76, 201);
+  width: 0;
+}
+
+/* img effect */ 
+ #hoverImage {
+  width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#hoverImage:hover {
+  transform: scale(1.1); 
+}
 
 
  
